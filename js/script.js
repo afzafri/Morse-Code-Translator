@@ -4,8 +4,6 @@ function MorseTranslator()
 	var msgInput = document.getElementById("msgInput");
 	var msgOutput = document.getElementById("msgOutput");
 
-	console.log(isMorseCode(msgInput.value));
-
 	if (isMorseCode(msgInput.value) == true)
 	{
 		var decoded = morse.decode(msgInput.value);
