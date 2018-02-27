@@ -25,27 +25,63 @@
     </style>
 </head>
 <body>
-<h3>Morse Code Translator - Afif</h3>
+	<header>
+		<nav class="top-nav">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a class="brand-logo"><i class="material-icons">question_answer</i> Morse Code Translator</a>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-Input:<br>
-<textarea rows="10" cols="50" id="msgInput" placeholder="Enter your text or morse code here"></textarea>
+	<main>
+		<div class="container">
 
-<br>
-<br>
+		<div class="row">
+			<blockquote >
+				Encode plain text to Morse code and Decode Morse code to plain text with this simple tool.
+			</blockquote>
+		</div>
 
-<select id="translateOption" onchange="MorseTranslator()">
-	<option value="">Please select</option>
-	<option value="encode">Text to Morse</option>
-	<option value="decode">Morse to Text</option>
-</select>
+		<div class="row">
 
-<br>
-<br>
+			<label>Input:</label>
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea rows="10" cols="50" id="msgInput" placeholder="Enter your text or morse code here" class="materialize-textarea"></textarea>
+				</div>
+			</div>
 
-Output:<br>
-<textarea rows="10" cols="50" id="msgOutput"></textarea> <br>
+			<div class="row">
+				<div class="input-field col s4">
+					<select id="translateOption" onchange="MorseTranslator()" class="browser-default">
+						<option value="">Please select translate option</option>
+						<option value="encode">Text to Morse</option>
+						<option value="decode">Morse to Text</option>
+					</select>
+				</div>
+			</div> <br><br>
 
+			<label>Output:</label>
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea rows="10" cols="50" id="msgOutput" class="materialize-textarea"></textarea> <br>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="footer-copyright">
+			<div class="container">
+				Afif Zafri &copy; 2018 
+			</div>
+		</div>
+	</footer>
 </body>
-<script type="text/javascript" src="./js/morse.js"></script>
-<script type="text/javascript" src="./js/script.js"></script>
+	<!-- load Javascript scrips -->
+	<script type="text/javascript" src="./js/morse.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </html>
