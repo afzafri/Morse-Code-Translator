@@ -58,19 +58,9 @@
 			<label>Input:</label>
 			<div class="row">
 				<div class="input-field col s12">
-					<textarea rows="10" cols="50" id="msgInput" placeholder="Enter your text or morse code here" class="materialize-textarea"></textarea>
+					<textarea rows="10" cols="50" id="msgInput" oninput="MorseTranslator()" placeholder="Enter your text or morse code here" class="materialize-textarea"></textarea>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="input-field col s4">
-					<select id="translateOption" onchange="MorseTranslator()" class="browser-default">
-						<option value="">Please select translate option</option>
-						<option value="encode">Text to Morse</option>
-						<option value="decode">Morse to Text</option>
-					</select>
-				</div>
-			</div> <br><br>
 
 			<label>Output:</label>
 			<div class="row">
