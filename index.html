@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Morse Code Translator</title>
+</head>
+<body>
+<h3>Morse Code Translator - Afif</h3>
+
+Input:<br>
+<textarea rows="10" cols="50" id="msgInput" placeholder="Enter your text or morse code here"></textarea>
+
+<br>
+<br>
+
+<select id="translateOption" onchange="MorseTranslator()">
+	<option value="">Please select</option>
+	<option value="encode">Text to Morse</option>
+	<option value="decode">Morse to Text</option>
+</select>
+
+<br>
+<br>
+
+Output:<br>
+<textarea rows="10" cols="50" id="msgOutput"></textarea> <br>
+
+</body>
+<script type="text/javascript" src="./js/morse.js"></script>
+</html>
